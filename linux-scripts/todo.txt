@@ -10,6 +10,7 @@ touch new logs
 kernel patches / kernel protection
 disable ipv6
 auditd or tripwire files for rwx usage
+forward logs
 find php vulnerabilities and sql stuff
 change hash type
 possibly chattr i shadow file
