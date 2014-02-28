@@ -7,11 +7,11 @@ remove ssh ftp web php banners
 change ssh settings
 change mysql settings
 touch new logs
-list setuid / kernel patches / kernel protection
+kernel patches / kernel protection
 disable ipv6
 auditd or tripwire files for rwx usage
 change hash type
-possibly chattr shadow file
+possibly chattr i shadow file
 install fail2ban
 
 bastion:
@@ -22,3 +22,9 @@ bastion:
 	updates
 	check crontabs
 	check startup items
+
+common-tasks:
+	check for no passwords
+	setuid binaries
+	aslr
+	backups
