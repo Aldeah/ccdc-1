@@ -1,5 +1,5 @@
 #!/bin/sh
-cd ~ && /sbin/iptables-save > ./sbin/iptables.rules
+cd ~ && /sbin/iptables-save > ./iptables.rules
 /sbin/iptables -P INPUT ACCEPT
 /sbin/iptables -P FORWARD ACCEPT
 /sbin/iptables -P OUTPUT ACCEPT
@@ -10,6 +10,8 @@ cd ~ && /sbin/iptables-save > ./sbin/iptables.rules
 /sbin/iptables -A INPUT -p tcp --dport 995 -j ACCEPT
 /sbin/iptables -A INPUT -p tcp --dport 143 -j ACCEPT
 /sbin/iptables -A INPUT -p tcp --dport 993 -j ACCEPT
+/sbin/iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+/sbin/iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 /sbin/iptables -A INPUT -p tcp -m state --state ESTABLISHED,RELATED -j ACCEPT
 /sbin/iptables -A INPUT -p udp -m state --state ESTABLISHED,RELATED -j ACCEPT
 /sbin/iptables -N LOGGING

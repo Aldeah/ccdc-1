@@ -1,5 +1,5 @@
 #!/bin/sh
-cd ~ && /sbin/iptables-save > ./sbin/iptables.rules
+cd ~ && /sbin/iptables-save > ./iptables.rules
 /sbin/iptables -P INPUT ACCEPT
 /sbin/iptables -P FORWARD ACCEPT
 /sbin/iptables -P OUTPUT ACCEPT
