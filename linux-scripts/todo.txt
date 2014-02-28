@@ -1,0 +1,24 @@
+change passwords
+list running services
+lsit open ports
+host firewall
+remove ssh ftp web php banners
+	/etc/issue
+change ssh settings
+change mysql settings
+touch new logs
+list setuid / kernel patches / kernel protection
+disable ipv6
+auditd or tripwire files for rwx usage
+change hash type
+possibly chattr shadow file
+install fail2ban
+
+bastion:
+	syn cookies
+	check sudoers and sudo groups and uid 0
+	check authorized keys
+	user passwords
+	updates
+	check crontabs
+	check startup items
