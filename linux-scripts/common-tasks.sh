@@ -10,7 +10,7 @@ echo 'enabling aslr'
 sysctl -w kernel.randomize_va_space=2
 read -p 'press key to continue..' -n1 -s
 echo 'now making backups'
-sudo tar -jcvf /root/www.tar.bz2 /var/www
-sudo tar -jcvf /root/log.tar.bz2 /var/log
-sudo tar -jcvf /root/etc.tar.bz2 /etc
+tar -jcvf /root/www.tar.bz2 /var/www
+tar -jcvf /root/log.tar.bz2 /var/log
+tar -jcvf /root/etc.tar.bz2 /etc
 read -p 'press key to continue..' -n1 -s

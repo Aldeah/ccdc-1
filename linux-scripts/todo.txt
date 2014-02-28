@@ -1,6 +1,6 @@
 change passwords
 list running services
-lsit open ports
+list open ports
 host firewall
 remove ssh ftp web php banners
 	/etc/issue
@@ -10,6 +10,7 @@ touch new logs
 kernel patches / kernel protection
 disable ipv6
 auditd or tripwire files for rwx usage
+find php vulnerabilities and sql stuff
 change hash type
 possibly chattr i shadow file
 install fail2ban
