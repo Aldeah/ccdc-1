@@ -1,0 +1,63 @@
+INTEROFFICE MEMORANDUM
+TO:	PHIL CARSON
+FROM:	MAESTRO STREAMS BLUE TEAM 4
+SUBJECT:	DOCUMENT CHANGES
+DATE:	MARCH 1, 2014
+
+	
+	
+Mr. Carson:
+Below is a description of all of the changes made to each system in the organization.
+
+MANAGEMENT1	
+9:30 : Management1 : Changed all local passwords to protect against weak passwords on machines.
+9:35 : Management2 : Disabled IPv6 to avoid potential attack vectors using this connection.
+9:45 : Management1 : Disabled wireless to prevent attacks on wireless network.
+
+MANAGEMENT2
+9:30 : Management2 : Changed all local passwords to protect against weak passwords on machines.
+9:35 : Management2 : Disabled IPv6 to avoid potential attack vectors using this connection.
+9:45 : Management2 : Disabled wireless to prevent attacks on wireless network.
+9:47 : Management2 : Cleaned startup items to protect against processes that might cause issues with the machine in the future.
+
+MANAGEMENT3
+9:30 : Management3 : Changed all local passwords to protect against weak passwords on machines.
+9:35 : Management3 : Disabled IPv6 to avoid potential attack vectors using this connection.
+9:45 : Management3 : Disabled wireless to prevent attacks on wireless network.
+9:47 : Management2 : Cleaned startup items to protect against processes that might cause issues with the machine in the future.
+
+MANAGEMENT4
+9:30 : Management4 : Changed all local passwords to protect against weak passwords on machines. Removed guest login account.
+9:35 : Management4 : Changed name of Admin account to make it more difficult to guess usernames.
+9:37 : Management4 : Disabled IPv6 to avoid potential attack vectors using this connection.
+9:45 : Management4 : Disabled wireless to prevent attacks on wireless network.
+
+PRINTER
+9:45 AM : Printer : Disabled IPv6 to close off unused forms of communication in an attempt to better protect the network.
+11:20 AM : Printer : Reset printer security settings to default settings. Reissued the self-signed certificate for communication over HTTPS. Set Admin password. Modified web login to only allow communication from team management laptops. We did this in an attempt to protect the printer against attacks and to prevent it being used as a way into the network.
+
+DC1.TRENDS.COM
+9:45 : dc1.trends.com : Disabled IPv6 and changed domain admin password to protect against potential attack vectors and to protect against weak credentials.
+
+DC.MAESTRO2.LOCAL
+9:45 : dc.maestro2.local : Changes domain administrator password. This was done to protect against weak credentials.
+10:00 : dc.maestro2.local : Changed all domain account passwords. Removed non-essential accounts. 
+10:30 : dc.maestro2.local : Set firewall rules to prevent communication except on the ports needed for essential services.
+
+IMAIL.TRENDS.COM
+
+BLOG.MAESTRO2.LOCAL
+
+WWW.STREAMS.COM
+
+FTP.MIS.COM
+
+WWW.GAMES.COM
+
+MAIL.MAESTRO2.LOCAL
+
+SPLUNK
+
+DB.MAESTRO2.LOCAL
+
+DROPBOX.MAESTRO2.LOCAL
